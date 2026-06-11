@@ -1,0 +1,50 @@
+{
+  "accomplished": [
+    { "sl": 1, "name": "15 (Eleven) Storied Residential Building (Valensia Tower)", "location": "Plot-28/A, Tipu-Sultan Road, Wari, Dhaka-1100", "client": "Art Effects Ltd" },
+    { "sl": 2, "name": "Samira Tower (Residential cum Commercial RCC Building)", "location": "64/B, Road-07, Jatrabari", "client": "Art Effects Ltd" },
+    { "sl": 3, "name": "10 (Ten) Storied Apartment Building (Rupshi Roxana Valley)", "location": "Plot No 77, Road 08, Rajuk Rehabilitation Zone, Merul Badda, Dhaka-1212", "client": "Rupshi Builders Limited" },
+    { "sl": 4, "name": "9 (Nine) Storied Apartment Building", "location": "Plot No. 98B, Chowdhurypara, Malibag, Dhaka-1219", "client": "Rupshi Builders Limited" },
+    { "sl": 5, "name": "10 (Ten) Storied Apartment Project", "location": "AftabNagar, Badda, Dhaka-1212", "client": "FM Engineers Associates" },
+    { "sl": 6, "name": "8 (Eight) Storied Residential Building", "location": "Gazipur", "client": "Mr. Robiul Islam" },
+    { "sl": 7, "name": "10 (Ten) Storied Residential Building Project", "location": "AftabNagar, Badda, Dhaka-1212", "client": "FM Engineers Associates" },
+    { "sl": 8, "name": "7 (Seven) Storied Residential Building", "location": "Naogoan", "client": "Design Bee" },
+    { "sl": 9, "name": "9 (Nine) Storied Apartment Project (Jahanara Garden)", "location": "Holding No. 35, Green Road, Dhaka", "client": "FM Engineers Associates" },
+    { "sl": 10, "name": "10 (Ten) Storied Commercial & Residential Building", "location": "Plot No. 01, Road No. 5, Banasree, Dhaka", "client": "FM Engineers Associates" },
+    { "sl": 11, "name": "9 (Nine) Storied Residential Building", "location": "Plot No. 07, Road No. 12, Mohammadpur, Dhaka", "client": "Dr. Shakawat Hossain" },
+    { "sl": 12, "name": "8 (Eight) Storied Residential Building", "location": "Plot No. 23, Road No. 08, Badda, Dhaka", "client": "Mr. Subhan Chowdhury" },
+    { "sl": 13, "name": "9 (Nine) Storied Apartment Project", "location": "Plot No. 17, Road No. 5, Block-G, Kuril, Dhaka", "client": "Rupshi Builders Ltd." },
+    { "sl": 14, "name": "7 (Seven) Storied Residential Building", "location": "Bogura", "client": "Lt. Crd. Rakibul Hasan" },
+    { "sl": 15, "name": "8 (Eight) Storied Apartment Building", "location": "Pagla, Narayangonj", "client": "Major. Anisur Rahman" },
+    { "sl": 16, "name": "Proposed 2 (Two) Storied Steel Structure", "location": "Marial, P.S-Gazipur, Dist-Gazipur", "client": "Growbiz Industries Ltd" },
+    { "sl": 17, "name": "Proposed Two-Story Steel Structure (PEB) Workshop", "location": "Kodda, Gazipur", "client": "Summit Power Plant" },
+    { "sl": 18, "name": "Unifill Washing & Dyeing Shed", "location": "Rupgong, Narayangonj", "client": "Unifill Washing & Dyeing Ltd." },
+    { "sl": 19, "name": "Jalalabad Spinning Mill", "location": "Moulvi-Bazar, Sylhet", "client": "Jalalabad Spinning Ltd." },
+    { "sl": 20, "name": "Single-Storied Pre-Fabricated Dyeing Shed", "location": "Tangail", "client": "Newtex Group" },
+    { "sl": 22, "name": "Single Story Spinning Shed", "location": "Hobigonj, Sylhet", "client": "Saiham Group" },
+    { "sl": 23, "name": "Single Story Godown Shed", "location": "Rajendrapur, Gazipur", "client": "Panache Knitting Creation Ltd." },
+    { "sl": 24, "name": "Single Story Dining Shed", "location": "Hobigonj, Sylhet", "client": "Saiham Group" },
+    { "sl": 25, "name": "Detailed Engineering Assessment for Sajid Washing Ltd", "location": "Milgate, Tongi, Dhaka", "client": "Hameem Group" },
+    { "sl": 26, "name": "Detailed Engineering Assessment for Ethical Garments", "location": "Mugda, Dhaka", "client": "Ethical Garments" },
+    { "sl": 27, "name": "Detailed Engineering Assessment of Single-Story Pre-Fabricated Steel Building", "location": "Ashulia, Dhaka", "client": "Murad Apparel Ltd." }
+  ],
+  "underConstruction": [
+    { "name": "B+G+9 Storied Building at Basundhara", "location": "Basundhara, Dhaka", "type": "Residential" },
+    { "name": "G+9 Storied Building at Basundhara", "location": "Basundhara, Dhaka", "type": "Residential" },
+    { "name": "B+G+7 Storied Building at POSH-1", "location": "POSH-1, Dhaka", "type": "Residential" },
+    { "name": "Jalil Villa, Shajahanpur", "location": "Shajahanpur, Dhaka", "client": "Heritage Assets", "type": "Residential" },
+    { "name": "Hassan Garden, Shajahanpur", "location": "Shajahanpur, Dhaka", "client": "Heritage Assets", "type": "Residential" },
+    { "name": "4 Storied Building at Bancharampur", "location": "Bancharampur, Brahmanbaria", "type": "Residential" },
+    { "name": "Duplex Project in Bancharampur", "location": "Bancharampur, Brahmanbaria", "type": "Residential" },
+    { "name": "Ten Story Residential Building (Bhaiya Properties)", "location": "Basabo, Dhaka", "type": "Residential" },
+    { "name": "Eight Story Residential Building", "location": "POSH-1, Dhaka", "type": "Residential" },
+    { "name": "G+9 Storied Building", "location": "Zigatola, Dhaka", "client": "PDL", "type": "Residential" },
+    { "name": "Triplex Building", "location": "Chadpur", "type": "Residential" }
+  ],
+  "recentProjects": [
+    { "name": "BSCIC District Office", "location": "Bogra" },
+    { "name": "BSCIC District Office", "location": "Cumilla" },
+    { "name": "BSCIC District Office", "location": "Cox's Bazar" },
+    { "name": "BSCIC District Office", "location": "Shatkhira" },
+    { "name": "BSCIC District Office", "location": "Sylhet" }
+  ]
+}

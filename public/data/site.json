@@ -1,0 +1,74 @@
+{
+  "company": {
+    "name": "PDC Engineers & Associates",
+    "tagline": "Planning, Design & Construction",
+    "established": 2022,
+    "vision": "Safety & Thrifty in the World of Infrastructure",
+    "address": "House #31 (Ground Floor), Road No. 7, Block F, Banasree, Rampura, Dhaka-1219",
+    "phones": ["01732671618", "01943199969"],
+    "email": "pdc.engineers90@gmail.com",
+    "bank": "NRBC Bank PLC, Banasree Branch",
+    "bankAccount": "Nasima Palace, Plot # H/7, Road # 04, Avenue # 08, Block # H, Khilgaon, Dhaka"
+  },
+  "about": {
+    "summary": "PDC Engineers & Associates is a fast-growing multidisciplinary engineering (consultancy & Construction) organization engaged in the areas of civil and structural engineering, geotechnical engineering, urban planning and design, construction, and project management services. PDC has started its journey since 2022 with the vision 'safety & thrifty in the world of infrastructure'. PDC has been providing services to the government, private, and international organizations.",
+    "description": "PDC offers a full range of services starting from project conception right up to completion. Working in those services relate to planning, design, construction, safety, compliance and improvement of Quality Health Safety, Environment, Social Accountability, and including conformity assessment services.",
+    "culture": "We take a lot of pride in our mission, vision and core values. As a team, from the top of the ladder to the bottom, we strive to make this company a noteworthy business, setting trends and new standards in the Bangladesh infrastructure consulting sector.",
+    "resources": "PDC is adequately equipped with the required logistics of transport, the latest survey & investigation equipment, testing equipment, laboratory, server & personal computers, licensed software, etc."
+  },
+  "vision": {
+    "vision": "PDC Engineers & Associates envisions sustainable infrastructure across the country as a technical consultant. To provide excellent engineering consultancy services to the construction industry.",
+    "mission": [
+      "Our main goal is to set a benchmark in the professional field and to play a pioneering role in providing Engineering solutions with excellence.",
+      "Always committed to be innovative and maintain quality in order to meet the needs of our clients.",
+      "To be caring and trustworthy for our clients, employees, and society in general.",
+      "To further develop and improve quality engineering consultancy services.",
+      "Adoption of evolving technologies to act as a leading technical consultant.",
+      "To provide professional engineering solutions to meet best practice environmental and social economic objectives.",
+      "To emphasize on highest standard of safety and business ethics, quality, efficient, value added and productive engineering services.",
+      "Ensuring quality of service by complying with internationally recognized codes and standards of practices."
+    ],
+    "objectives": "PDC is striving to produce the highest quality work in line with National & international standards. Our basic objective is to work effectively and achieve maximum client satisfaction with maximum efficiency in minimum time and expenditure through the planned and organized use of men, materials, equipment & financial resources.",
+    "whyUs": [
+      "We have a big and strong technical team with experience in all aspects of engineering from structural engineering and civil engineering to project management.",
+      "Use of the latest design software.",
+      "Construction planning and management to ensure safety and quality.",
+      "We identify new ideas that create value, which involves taking risks, inspiring creativity, inventing and learning from our outcomes.",
+      "Timely completion of the project.",
+      "Best solutions matching client requirements.",
+      "We consistently deal in truth and honesty as a legacy."
+    ]
+  },
+  "leadership": [
+    {
+      "name": "Engr. Md Babul Mia",
+      "title": "Managing Partner & Managing Director",
+      "credentials": ["SEng ICC(US) Certified Structural Engineer", "RAJUK & DCB Enlisted", "B.Sc. in Civil Engineering (CUET)", "M.Sc. in Chemical Engineering", "MIEB-37815"],
+      "message": "PDC Engineers & Associates is one of the infrastructure consulting company of Bangladesh with an excellent record of successful delivery projects in industrial, institutional and residential sectors. The necessity of the formation of this company rose only because of close relation with some foreign investors especially in Export Processing Zone (EPZ) area.",
+      "quote": "When you do something, do it in style and with quality and never leave things for tomorrow that you can do today",
+      "image": "/business-card.jpeg"
+    }
+  ],
+  "policies": {
+    "quality": [
+      "Understand and meet the requirements of our employees, consultants, contractors, and clients.",
+      "Continually improve our processes and services.",
+      "Comply with regulatory requirements and applicable international standards and codes related to quality.",
+      "To ensure that the contractors and consultants of PDC are aware of and comply with PDC policy.",
+      "Actively seeking new and creative ways of enhancing and increasing our levels of customer service with a professional attitude towards our commitment to solving their needs."
+    ],
+    "healthSafety": [
+      "Provide and maintain safe premises and healthy working environments.",
+      "Ensure effective assessment of risks and apply measures to control them.",
+      "Comply to regulatory requirements and applicable international standards and codes related to health and safety.",
+      "Identify the potential hazard and ensure arrangements are made to control the associated risks.",
+      "Provide information, instruction, training and supervision to ensure that everyone is able to carry out their work safely."
+    ],
+    "environment": [
+      "To take every effort to prevent pollution by reducing emissions, preventing spillage, minimizing wastage and re-use and recycling wherever possible.",
+      "As appropriate, take corrective action where past practices have harmed the environment to minimize risk to the environment.",
+      "Comply to regulatory requirements and applicable international standards and codes related to environment.",
+      "Ensure continuous improvement in our processes to prevent pollution of air, land and water as well as to prevent personal injury and damage to property."
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "departments": [
+    {
+      "id": "structural",
+      "name": "Structural Engineering",
+      "icon": "Building2",
+      "description": "PDC Engineers & Associates provides structural design for the full spectrum of commercial, private, municipal, and institutional projects. Our staff carefully plans and coordinates structural systems and structural elements with architectural designs and are committed to providing safe and cost-effective structural designs for all projects.",
+      "services": [
+        "Analysis of RCC and Steel Structural",
+        "Analysis of existing structural system development",
+        "Structural Assessment & Remediation",
+        "Commercial and Residential Building Design",
+        "Geotechnical Investigation and Testing",
+        "Footwear & connecting Bridge Design",
+        "Consultancy",
+        "Special Inspections"
+      ],
+      "team": [
+        {
+          "name": "Md. Mostafijur Rahman Khan",
+          "role": "Lead Structural Engineer",
+          "credentials": ["Rajuk Reg. No-DMINB/CE-0468", "MIEB-30981"]
+        },
+        {
+          "name": "Engr. TY Razan",
+          "role": "Sr. Structural Engineer",
+          "credentials": ["B.Sc. in Civil Engineering", "M.Sc in Structural Engineering"]
+        },
+        {
+          "name": "Engr. Zahidul Alam",
+          "role": "Structural Engineer",
+          "credentials": ["B.Sc. in Civil Engineering (RUET)"]
+        }
+      ]
+    },
+    {
+      "id": "architectural",
+      "name": "Architectural Planning",
+      "icon": "Pencil",
+      "description": "We have positioned ourselves as the choice for those who value quality, creativity and distinction. We give complete solution of Building design, always trying to deliver functional and unique design solution through minimizing cost to make customer satisfaction as per client requirement.",
+      "services": [
+        "Construction Documentation",
+        "2D CAD Drafting",
+        "CAD Conversion",
+        "Retail Space Drafting",
+        "Interior Design",
+        "3D Rendering",
+        "3D Architectural Walkthrough",
+        "Point Cloud Services",
+        "Building Information Modeling (BIM)",
+        "Sustainable Design",
+        "Landscape Design & Drafting"
+      ],
+      "team": [
+        {
+          "name": "Arch. Riazul Islam",
+          "role": "Sr. Architect",
+          "credentials": ["B.Sc. In Architecture", "RAJUK & DCB Enlisted Architect"]
+        },
+        {
+          "name": "MD. Tanim",
+          "role": "Junior Architect",
+          "credentials": ["Diploma In Architecture"]
+        },
+        {
+          "name": "MD. Faijul Islam",
+          "role": "Draftsman",
+          "credentials": ["Diploma In Architecture"]
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "name": "Civil Construction",
+      "icon": "HardHat",
+      "description": "PDC is a fast-growing company for Civil Construction, Project Management, Architectural & Structural Consultancy. Our engineers and technical staff-members are highly experienced and adequately skilled to meet any kind of demand.",
+      "services": [
+        "Building Construction",
+        "Heavy & Structural Concrete",
+        "Steel Construction",
+        "RCC Construction",
+        "Industrial Parks & Workshops",
+        "WTP and ETP Construction",
+        "Soil Test",
+        "Digital Survey"
+      ],
+      "team": [
+        {
+          "name": "Engr. Saleh Akram",
+          "role": "Project Manager",
+          "credentials": ["B.Sc. In Civil Engineering"]
+        },
+        {
+          "name": "Engr. Amir Hamza",
+          "role": "Site Engineer",
+          "credentials": ["Diploma in Civil"]
+        },
+        {
+          "name": "Engr. MD. AL Mamun",
+          "role": "Project Engineer",
+          "credentials": ["B.Sc. In Mechanical Engineering (WCIMT)"]
+        }
+      ]
+    },
+    {
+      "id": "mep",
+      "name": "MEP Engineering",
+      "icon": "Zap",
+      "description": "We search for simple, eloquent solutions to complex problems. We minimize construction costs by eliminating the extraneous and focusing on the overall efficiency for the most streamlined designs. We operate nationwide and internationally offering Mechanical, Electrical, Plumbing as well as Building Condition Assessments & Commissioning.",
+      "services": [
+        "HVAC Systems Design",
+        "Preliminary Heat Load Calculations",
+        "Heating and Ventilation Systems",
+        "High and Low Pressure Pipeline Systems Design",
+        "Laboratory Exhaust Systems Design",
+        "Duct Layout",
+        "Toilet Ventilation",
+        "Cold Storage System",
+        "Acoustic and Thermal Insulation",
+        "Basement Ventilation System",
+        "Hot and Cold Water System Design",
+        "Sanitary Plumbing Design",
+        "Water Treatment Plant (WTP)",
+        "Effluent Treatment Plant (ETP)",
+        "GAS Piping Design",
+        "Commercial Kitchen and Laundry Design"
+      ],
+      "team": [
+        {
+          "name": "Engr. Masum Reza",
+          "role": "Sr. Engineer",
+          "credentials": ["B.Sc. in Electrical Engineering (AIUB)"]
+        },
+        {
+          "name": "Engr. MD. Sayam",
+          "role": "Senior Engineer",
+          "credentials": ["B.Sc. in Mechanical Engineering"]
+        },
+        {
+          "name": "Shamsuddin Ahmed",
+          "role": "Junior Engineer",
+          "credentials": ["B.Sc. in EEE"]
+        }
+      ]
+    },
+    {
+      "id": "fire-safety",
+      "name": "Fire Safety Engineering",
+      "icon": "Flame",
+      "description": "In high-rise Bangladesh buildings, fire can do a lot of damage-fast. Our systems call the fire department at first sign of smoke to help keep you and your building safe. Our systems are equipped to detect heat, smoke, and carbon monoxide, ensuring you'll always be aware of a problem in your building.",
+      "services": [
+        "Automatic Sprinkler System Design",
+        "Fire Safety Planning",
+        "Pre-Action Systems",
+        "Risk Assessments",
+        "Fire Detection System Design",
+        "Drawing of an Addressable Fire Detection System"
+      ],
+      "team": []
+    },
+    {
+      "id": "geotechnical",
+      "name": "Geotechnical Investigation",
+      "icon": "Mountain",
+      "description": "PDC provides comprehensive geotechnical investigation and testing services to support safe and efficient foundation design for all types of structures.",
+      "services": [
+        "Soil Testing",
+        "Digital Survey",
+        "Reconnaissance Survey",
+        "Project Preparatory Technical Assistance",
+        "Field Survey & Investigations",
+        "Digital Survey",
+        "Techno-Economic Feasibility"
+      ],
+      "team": []
+    }
+  ],
+  "additionalServices": [
+    "Structural Engineering",
+    "Architectural Planning",
+    "3D Visualization",
+    "Landscaping & Animation",
+    "Geotechnical Investigation",
+    "Evaluation & Retrofitting Existing Structure (R.C.C. & Steel)",
+    "Fire Safety Engineering",
+    "MEP (Mechanical, Electrical & Plumbing)",
+    "Computer Aided Engineering",
+    "Techno-Economic Feasibility",
+    "Security Services",
+    "Reconnaissance Survey, Project Preparatory Technical Assistance, Field Survey/Investigations, Digital Survey"
+  ]
+}
