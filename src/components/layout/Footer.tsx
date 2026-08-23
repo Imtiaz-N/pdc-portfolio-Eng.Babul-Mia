@@ -4,7 +4,7 @@ import { useData } from "@/hooks/use-data";
 
 export function Footer() {
   const { data: site } = useData<any>("site.json");
-  const logoSrc = `${import.meta.env.BASE_URL}logo.png`;
+  const logoSrc = `${import.meta.env.BASE_URL}logo.jpg`;
 
   return (
     <footer className="bg-secondary text-secondary-foreground pt-16 pb-8 border-t border-secondary-border">

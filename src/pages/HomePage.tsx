@@ -1,45 +1,67 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, Building2, Pencil, HardHat, Zap, Flame, Mountain, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Building2, Mountain, Pencil, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useData } from "@/hooks/use-data";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
-const iconMap: Record<string, any> = {
-  Building2,
-  Pencil,
-  HardHat,
-  Zap,
-  Flame,
-  Mountain,
-};
+const HERO_IMAGE = "/homePageHero.jpg";
 
-const BUILDING_IMAGES = [
-  "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=85",
-  "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=85",
-  "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&q=85",
+const expertiseCards = [
+  {
+    id: "structural",
+    title: "Structural Engineering",
+    description:
+      "Comprehensive structural analysis and design for residential, commercial, and industrial buildings, ensuring stability and safety under all conditions.",
+    icon: Building2,
+  },
+  {
+    id: "architectural",
+    title: "Architectural Design",
+    description:
+      "Innovative spatial planning and aesthetic blueprinting tailored to client vision and environmental context.",
+    icon: Pencil,
+  },
+  {
+    id: "project-management",
+    title: "Project Management",
+    description:
+      "End-to-end oversight ensuring projects are delivered on time, within budget, and to exact specifications.",
+    icon: Wrench,
+  },
+  {
+    id: "geotechnical",
+    title: "Geotechnical Engineering",
+    description:
+      "Advanced soil analysis and foundation engineering for complex terrains.",
+    icon: Mountain,
+  },
 ];
-
-const WHY_US_IMAGE =
-  "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85";
-
-const SERVICES_BG =
-  "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1920&q=80";
 
 export default function HomePage() {
   const { data: site, loading: siteLoading } = useData<any>("site.json");
-  const { data: servicesData, loading: servicesLoading } = useData<any>("services.json");
+  const { data: servicesData, loading: servicesLoading } =
+    useData<any>("services.json");
 
   if (siteLoading || servicesLoading) {
     return (
       <div className="flex h-[50vh] items-center justify-center">
-        <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" />
+        <div className="h-8 w-8 animate-spin rounded-full border-4 border-gold border-t-transparent" />
       </div>
     );
   }
 
-  const { company, vision } = site || {};
-  const departments = servicesData?.departments || [];
+  const { company } = site || {};
+  const divisions = servicesData?.departments?.length || 6;
+
+  const stats = [
+    { value: "27+", label: "Accomplished Projects" },
+    { value: divisions.toString(), label: "Engineering Divisions" },
+    {
+      value: company?.established?.toString() || "2022",
+      label: "Year Founded",
+    },
+    { value: "100%", label: "Safety Record" },
+  ];
 
   return (
     <motion.div
@@ -50,350 +72,173 @@ export default function HomePage() {
     >
       {/* ── Hero Section ─────────────────────────────────────────── */}
       <section
-        className="relative text-white overflow-hidden min-h-[92vh] flex items-center"
+        className="relative flex min-h-[58vh] flex-col overflow-hidden text-white"
         data-testid="section-hero"
       >
-        {/* Full-bleed building photo */}
         <div className="absolute inset-0 z-0">
           <img
-            src={BUILDING_IMAGES[0]}
-            alt="Modern high-rise building"
-            className="w-full h-full object-cover object-center"
+            src={HERO_IMAGE}
+            alt="PDC Engineering and construction infrastructure"
+            className="h-full w-full object-cover object-center"
             loading="eager"
           />
-          {/* Dark gradient overlay — stronger at left where text sits */}
-          <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/80 to-secondary/30" />
-          {/* Bottom fade */}
-          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-secondary to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/95 via-ink/85 to-ink/70" />
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ink to-transparent" />
         </div>
 
-        {/* Gold diagonal accent line */}
-        <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-primary to-transparent z-10 opacity-60" />
+        <div className="absolute bottom-0 left-0 top-0 z-10 w-px bg-gradient-to-b from-transparent via-gold to-transparent opacity-60" />
 
-        <div className="container relative z-10 mx-auto px-4 py-24 lg:py-36">
-          <div className="max-w-3xl space-y-7">
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.1 }}
-              className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/15 px-4 py-1.5 text-sm font-medium text-primary tracking-wide"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-primary inline-block" />
-              Established {company?.established || 2022} · Dhaka, Bangladesh
-            </motion.div>
+        <div className="container relative z-10 mx-auto flex flex-1 items-start px-6 md:px-12 lg:px-16">
+          <div className="max-w-4xl pt-14 pb-12 lg:pt-16 lg:pb-16">
+            <div className="space-y-7">
+              {/* ── Eyebrow badge + Heading share the same top line ── */}
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <motion.h1
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                  className="max-w-2xl font-serif text-[36px] font-bold leading-[44px] tracking-[-0.02em] md:text-[56px] md:leading-[64px]"
+                >
+                  Engineering the World of Infrastructure
+                </motion.h1>
 
-            <motion.h1
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
-            >
-              {company?.name}
-            </motion.h1>
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.1 }}
+                  className="mt-1 inline-flex flex-shrink-0 items-center gap-2 rounded-full border border-gold/50 bg-gold/15 px-4 py-1.5 font-sans text-xs font-bold uppercase leading-4 tracking-[0.1em] text-gold"
+                >
+                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-gold" />
+                  Established {company?.established || 2022} · Dhaka, Bangladesh
+                </motion.div>
+              </div>
 
-            <motion.p
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-xl md:text-2xl text-primary font-semibold tracking-wide uppercase"
-            >
-              {company?.tagline}
-            </motion.p>
-
-            <motion.p
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="text-lg text-white/75 max-w-2xl font-light leading-relaxed"
-            >
-              We provide complete{" "}
-              <span className="text-white font-medium">structural and architectural engineering solutions</span> —
-              from foundation design to full building construction. Our expert team
-              delivers residential, commercial, and industrial projects with precision,
-              safety, and internationally recognized standards.
-            </motion.p>
-
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 pt-2"
-            >
-              <Button
-                asChild
-                size="lg"
-                className="h-13 px-8 text-base font-semibold shadow-lg shadow-primary/30"
-                data-testid="btn-work-with-us"
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="max-w-2xl border-l-2 border-gold pl-5 font-sans text-lg leading-7 text-white/80"
               >
-                <Link href="/contact">
-                  Work With Us <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="h-13 px-8 text-base bg-transparent border-white/25 text-white hover:bg-white/10 hover:border-white/50"
-                data-testid="btn-view-projects"
-              >
-                <Link href="/projects">View Our Projects</Link>
-              </Button>
-            </motion.div>
+                Precision design, innovative planning, and structural integrity
+                since 2022. We provide complete structural and architectural
+                engineering solutions — from foundation design to full building
+                construction.
+              </motion.p>
 
-            {/* Stats bar */}
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.65 }}
-              className="grid grid-cols-3 gap-6 pt-10 mt-10 border-t border-white/10"
-            >
-              {[
-                { value: "27+", label: "Accomplished Projects" },
-                { value: "6", label: "Engineering Divisions" },
-                { value: "2022", label: "Year Founded" },
-              ].map(({ value, label }) => (
-                <div key={label}>
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-1">{value}</div>
-                  <div className="text-xs text-white/50 uppercase tracking-widest">{label}</div>
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.4 }}
+                className="flex flex-col gap-4 pt-2 sm:flex-row"
+              >
+                <Button
+                  asChild
+                  size="lg"
+                  className="h-12 bg-gold px-8 font-sans text-sm font-semibold uppercase leading-5 tracking-widest text-white shadow-lg shadow-gold/20 hover:bg-gold/90"
+                  data-testid="btn-work-with-us"
+                >
+                  <Link href="/contact">
+                    Work With Us{" "}
+                    <ArrowRight className="ml-2 h-4 w-4" strokeWidth={2} />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  size="lg"
+                  className="h-12 border border-white/25 bg-transparent px-8 font-sans text-sm font-semibold uppercase leading-5 tracking-widest text-white hover:border-gold hover:bg-gold/10 hover:text-gold"
+                  data-testid="btn-view-projects"
+                >
+                  <Link href="/projects">View Our Projects</Link>
+                </Button>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Stats bar ───────────────────────────────────────────── */}
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="relative z-10 w-full border-t border-white/10 bg-[#272D3A]"
+          data-testid="stats-bar"
+        >
+          <div className="container mx-auto px-6 md:px-12 lg:px-16">
+            <div className="grid grid-cols-2 divide-y divide-white/10 sm:grid-cols-4 sm:divide-x sm:divide-y-0 sm:divide-white/10">
+              {stats.map(({ value, label }) => (
+                <div
+                  key={label}
+                  className="flex flex-col items-center justify-center py-7 text-center"
+                >
+                  <div className="font-serif text-[32px] font-bold leading-10 text-gold md:text-[40px] md:leading-[48px]">
+                    {value}
+                  </div>
+                  <div className="mt-1 font-sans text-[10px] font-semibold uppercase leading-4 tracking-widest text-white/60">
+                    {label}
+                  </div>
                 </div>
               ))}
-            </motion.div>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
-      {/* ── Service Types Banner ─────────────────────────────────── */}
-      <section className="bg-primary py-5">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-x-10 gap-y-2 text-sm font-semibold text-primary-foreground/90 uppercase tracking-widest">
-            {[
-              "Structural Engineering",
-              "Architectural Design",
-              "Civil Construction",
-              "MEP Engineering",
-              "Fire Safety",
-              "Geotechnical Investigation",
-            ].map((s, i) => (
-              <span key={i} className="flex items-center gap-2">
-                {i > 0 && <span className="opacity-40">·</span>}
-                {s}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Services Grid ────────────────────────────────────────── */}
-      <section
-        className="relative py-24 bg-background overflow-hidden"
-        data-testid="section-services"
-      >
-        {/* Subtle background tint */}
-        <div
-          className="absolute inset-0 opacity-[0.03] bg-cover bg-center"
-          style={{ backgroundImage: `url(${SERVICES_BG})` }}
-        />
-        <div className="container relative mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-primary uppercase tracking-widest text-sm font-semibold mb-3">
-              What We Do
-            </p>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-5 text-foreground">
-              Engineering Solutions for Every Structure
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              From concept to completion — we provide structural, architectural, and construction
-              services that meet international codes and your specific project requirements.
-            </p>
+      {/* ── Expertise / Services ────────────────────────────────── */}
+      <section className="bg-background py-8" data-testid="section-services">
+        <div className="container mx-auto px-6 md:px-12 lg:px-16">
+          <div className="mb-6 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className=" font-sans text-xs font-bold uppercase leading-4 tracking-[0.1em] text-gold">
+                What We Do
+              </p>
+              <h2 className="font-serif text-[32px] font-semibold leading-10 bg-[linear-gradient(135deg,#1a1a1a_0%,#3d2b1f_40%,#8B7355_70%,#C9A66B_100%)] bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Engineering Solutions for Every Structure
+              </h2>
+            </div>
+            <Link
+              href="/services"
+              className="group inline-flex items-center gap-1 rounded-[6px] border-[1.5px] border-[#C9A66B] bg-transparent px-[22px] py-[10px] font-sans text-xs font-medium uppercase leading-4 tracking-[0.04em] text-[#8B7355] transition-all duration-[250ms] ease-in-out hover:border-[#C9A66B] hover:bg-[#C9A66B] hover:text-[#FBFAF9]"
+            >
+              Explore All Divisions
+              <ArrowRight
+                className="h-4 w-4 transition-transform duration-[250ms] ease-in-out group-hover:translate-x-1"
+                strokeWidth={2}
+              />
+            </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {departments.map((dept: any, i: number) => {
-              const Icon = iconMap[dept.icon] || Building2;
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            {expertiseCards.map((card, i) => {
+              const Icon = card.icon;
               return (
                 <motion.div
-                  key={dept.id}
+                  key={card.id}
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.08 }}
+                  transition={{ delay: i * 0.1 }}
+                  className="group relative overflow-hidden rounded-sm border border-[#D3DAEA] bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+                  data-testid={`card-expertise-${card.id}`}
                 >
-                  <Card
-                    className="h-full border-border/60 hover:border-primary/60 transition-all duration-300 bg-card hover:shadow-xl hover:-translate-y-1"
-                    data-testid={`card-service-${dept.id}`}
+                  <Icon className="mb-5 h-8 w-8 text-gold" strokeWidth={1.25} />
+                  <h3 className="mb-3 font-serif text-2xl font-semibold leading-8 text-ink">
+                    {card.title}
+                  </h3>
+                  <p className="mb-6 max-w-md font-sans text-base leading-6 text-ink/70">
+                    {card.description}
+                  </p>
+                  <Link
+                    href="/services"
+                    className="group/link inline-flex items-center gap-1 font-sans text-xs font-bold uppercase leading-4 tracking-[0.1em] text-gold transition-all hover:gap-2"
+                    data-testid={`link-expertise-${card.id}`}
                   >
-                    <CardHeader>
-                      <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <CardTitle className="font-serif text-xl">{dept.name}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="text-base line-clamp-3 mb-6">
-                        {dept.description}
-                      </CardDescription>
-                      <Link
-                        href="/services"
-                        className="text-primary font-medium flex items-center gap-1 hover:gap-2 transition-all hover:underline"
-                        data-testid={`link-service-${dept.id}`}
-                      >
-                        Learn more <ArrowRight className="h-4 w-4" />
-                      </Link>
-                    </CardContent>
-                  </Card>
+                    View Details{" "}
+                    <ArrowRight className="h-3.5 w-3.5" strokeWidth={2} />
+                  </Link>
                 </motion.div>
               );
             })}
           </div>
-        </div>
-      </section>
-
-      {/* ── Why Choose Us ────────────────────────────────────────── */}
-      <section
-        className="py-24 bg-secondary/5 border-y border-border"
-        data-testid="section-why-us"
-      >
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-14 items-center">
-            {/* Text */}
-            <div className="lg:w-1/2 space-y-6">
-              <p className="text-primary uppercase tracking-widest text-sm font-semibold">
-                Why PDC
-              </p>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                Built on Precision.<br />Trusted by Clients.
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                We combine ICC-certified structural expertise, modern design software, and rigorous
-                safety management to deliver buildings you can rely on — on time, within budget, and
-                to international standards.
-              </p>
-
-              <ul className="space-y-4 pt-2">
-                {vision?.whyUs?.slice(0, 6).map((reason: string, i: number) => (
-                  <motion.li
-                    key={i}
-                    initial={{ x: -20, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.08 }}
-                    className="flex items-start gap-3"
-                    data-testid={`item-why-us-${i}`}
-                  >
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                    <span className="text-foreground text-[15px]">{reason}</span>
-                  </motion.li>
-                ))}
-              </ul>
-
-              <div className="pt-4">
-                <Button asChild size="lg" data-testid="btn-about-us">
-                  <Link href="/about">
-                    About Our Company <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Building photo panel */}
-            <div className="lg:w-1/2 w-full h-[540px] rounded-2xl relative overflow-hidden shadow-2xl">
-              <img
-                src={WHY_US_IMAGE}
-                alt="Construction site managed by PDC Engineers"
-                className="w-full h-full object-cover object-center"
-                loading="lazy"
-              />
-              {/* Gold gradient overlay at bottom */}
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/30 to-transparent" />
-
-              {/* Floating stat card */}
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-                className="absolute bottom-6 left-6 right-6"
-              >
-                <div className="bg-background/92 backdrop-blur-sm p-6 rounded-xl border border-border shadow-lg">
-                  <h3 className="font-serif text-xl font-bold text-foreground mb-2">Our Vision</h3>
-                  <p className="text-muted-foreground italic text-sm leading-relaxed">
-                    "{vision?.vision}"
-                  </p>
-                </div>
-              </motion.div>
-
-              {/* Top accent badge */}
-              <div className="absolute top-5 right-5 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full shadow">
-                Est. 2022
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Building Types CTA Banner ─────────────────────────────── */}
-      <section
-        className="relative py-24 overflow-hidden"
-        data-testid="section-cta"
-      >
-        <div className="absolute inset-0 z-0">
-          <img
-            src={BUILDING_IMAGES[1]}
-            alt="Architectural blueprint and building"
-            className="w-full h-full object-cover object-center"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-secondary/88" />
-        </div>
-        <div className="container relative z-10 mx-auto px-4 text-center text-white">
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-primary uppercase tracking-widest text-sm font-semibold mb-4">
-              Our Building Types
-            </p>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 max-w-3xl mx-auto leading-tight">
-              Structural &amp; Architectural Solutions for Every Build
-            </h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Whether it's a high-rise residential tower, an industrial steel shed, a government office
-              complex, or a commercial mixed-use building — PDC delivers complete engineering and
-              construction services tailored to your project.
-            </p>
-
-            {/* Building type pills */}
-            <div className="flex flex-wrap justify-center gap-3 mb-12">
-              {[
-                "Residential High-Rise",
-                "Commercial Buildings",
-                "Industrial Sheds & Factories",
-                "Government & Institutional",
-                "Mixed-Use Developments",
-                "Steel Structure (PEB)",
-                "Renovation & Retrofitting",
-              ].map((type) => (
-                <span
-                  key={type}
-                  className="border border-primary/40 text-primary bg-primary/10 text-sm font-medium px-4 py-2 rounded-full"
-                >
-                  {type}
-                </span>
-              ))}
-            </div>
-
-            <Button
-              asChild
-              size="lg"
-              className="px-10 font-semibold shadow-lg shadow-primary/30"
-              data-testid="btn-cta-contact"
-            >
-              <Link href="/contact">
-                Start Your Project <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </motion.div>
         </div>
       </section>
     </motion.div>
