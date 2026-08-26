@@ -10,6 +10,9 @@ import AboutPage from "@/pages/AboutPage";
 import ServicesPage from "@/pages/ServicesPage";
 import TeamPage from "@/pages/TeamPage";
 import ProjectsPage from "@/pages/ProjectsPage";
+import ProjectDetailPage from "@/pages/ProjectDetailPage";
+import BlogPage from "@/pages/BlogPage";
+import BlogDetailPage from "@/pages/BlogDetailPage";
 import ClientsPage from "@/pages/ClientsPage";
 import ContactPage from "@/pages/ContactPage";
 import NotFound from "@/pages/not-found";
@@ -27,6 +30,9 @@ function Router() {
           <Route path="/services" component={ServicesPage} />
           <Route path="/team" component={TeamPage} />
           <Route path="/projects" component={ProjectsPage} />
+          <Route path="/projects/:id" component={ProjectDetailPage} />
+          <Route path="/blog" component={BlogPage} />
+          <Route path="/blog/:slug" component={BlogDetailPage} />
           <Route path="/clients" component={ClientsPage} />
           <Route path="/contact" component={ContactPage} />
           <Route component={NotFound} />

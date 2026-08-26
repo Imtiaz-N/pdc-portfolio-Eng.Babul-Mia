@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Services", path: "/services" },
   { name: "Team", path: "/team" },
   { name: "Projects", path: "/projects" },
+  { name: "Blog", path: "/blog" },
   { name: "Clients", path: "/clients" },
   { name: "Contact", path: "/contact" },
 ];

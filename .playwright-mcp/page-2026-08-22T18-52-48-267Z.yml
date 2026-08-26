@@ -1,0 +1,117 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - link "PDC Engineers & Associates PDC Engineers" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img "PDC Engineers & Associates" [ref=e8]
+          - generic [ref=e9]: PDC Engineers
+        - generic [ref=e10]:
+          - link "Home" [ref=e11] [cursor=pointer]:
+            - /url: /
+          - link "About" [ref=e12] [cursor=pointer]:
+            - /url: /about
+          - link "Services" [ref=e13] [cursor=pointer]:
+            - /url: /services
+          - link "Team" [ref=e14] [cursor=pointer]:
+            - /url: /team
+          - link "Projects" [ref=e15] [cursor=pointer]:
+            - /url: /projects
+          - link "Clients" [ref=e16] [cursor=pointer]:
+            - /url: /clients
+          - link "Contact" [ref=e17] [cursor=pointer]:
+            - /url: /contact
+          - link "Get In Touch" [ref=e18] [cursor=pointer]:
+            - /url: /contact
+    - main [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - img "PDC Engineering and construction infrastructure" [ref=e23]
+          - generic [ref=e28]:
+            - generic [ref=e29]: Established 2022 · Dhaka, Bangladesh
+            - heading "Engineering the World of Infrastructure" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Precision design, innovative planning, and structural integrity since 2022. We provide complete structural and architectural engineering solutions — from foundation design to full building construction.
+            - generic [ref=e33]:
+              - link "Work With Us" [ref=e34] [cursor=pointer]:
+                - /url: /contact
+              - link "View Our Projects" [ref=e35] [cursor=pointer]:
+                - /url: /projects
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - generic [ref=e38]: 27+
+                - generic [ref=e39]: Accomplished Projects
+              - generic [ref=e40]:
+                - generic [ref=e41]: "6"
+                - generic [ref=e42]: Engineering Divisions
+              - generic [ref=e43]:
+                - generic [ref=e44]: "2022"
+                - generic [ref=e45]: Year Founded
+              - generic [ref=e46]:
+                - generic [ref=e47]: 100%
+                - generic [ref=e48]: Safety Record
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - paragraph [ref=e53]: What We Do
+              - heading "Engineering Solutions for Every Structure" [level=2] [ref=e54]
+            - link "Explore All Divisions" [ref=e55] [cursor=pointer]:
+              - /url: /services
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - heading "Structural Engineering" [level=3] [ref=e64]
+              - paragraph [ref=e65]: Comprehensive structural analysis and design for residential, commercial, and industrial buildings, ensuring stability and safety under all conditions.
+              - link "View Details" [ref=e66] [cursor=pointer]:
+                - /url: /services
+            - generic [ref=e69]:
+              - heading "Architectural Design" [level=3] [ref=e73]
+              - paragraph [ref=e74]: Innovative spatial planning and aesthetic blueprinting tailored to client vision and environmental context.
+              - link "View Details" [ref=e75] [cursor=pointer]:
+                - /url: /services
+            - generic [ref=e78]:
+              - heading "Project Management" [level=3] [ref=e81]
+              - paragraph [ref=e82]: End-to-end oversight ensuring projects are delivered on time, within budget, and to exact specifications.
+              - link "View Details" [ref=e83] [cursor=pointer]:
+                - /url: /services
+            - generic [ref=e86]:
+              - heading "Geotechnical Engineering" [level=3] [ref=e89]
+              - paragraph [ref=e90]: Advanced soil analysis and foundation engineering for complex terrains.
+              - link "View Details" [ref=e91] [cursor=pointer]:
+                - /url: /services
+    - contentinfo [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - img "PDC Engineers" [ref=e99]
+            - heading "PDC Engineers & Associates" [level=3] [ref=e100]
+            - paragraph [ref=e101]: Planning, Design & Construction
+          - generic [ref=e102]:
+            - heading "Quick Links" [level=4] [ref=e103]
+            - generic [ref=e104]:
+              - link "Home" [ref=e105] [cursor=pointer]:
+                - /url: /
+              - link "About Us" [ref=e106] [cursor=pointer]:
+                - /url: /about
+              - link "Services" [ref=e107] [cursor=pointer]:
+                - /url: /services
+              - link "Our Team" [ref=e108] [cursor=pointer]:
+                - /url: /team
+              - link "Projects" [ref=e109] [cursor=pointer]:
+                - /url: /projects
+              - link "Clients" [ref=e110] [cursor=pointer]:
+                - /url: /clients
+              - link "Contact" [ref=e111] [cursor=pointer]:
+                - /url: /contact
+          - generic [ref=e112]:
+            - heading "Contact Info" [level=4] [ref=e113]
+            - list [ref=e114]:
+              - listitem [ref=e115]:
+                - generic [ref=e119]: "House #31 (Ground Floor), Road No. 7, Block F, Banasree, Rampura, Dhaka-1219"
+              - listitem [ref=e120]:
+                - generic [ref=e123]: 01732671618, 01943199969
+              - listitem [ref=e124]:
+                - generic [ref=e128]: pdc.engineers90@gmail.com
+        - generic [ref=e129]:
+          - paragraph [ref=e130]: © 2024 PDC Engineers & Associates. All Rights Reserved.
+          - generic [ref=e131]: Privacy PolicyTerms of Service
+  - region "Notifications (F8)":
+    - list

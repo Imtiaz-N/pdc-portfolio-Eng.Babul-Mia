@@ -1,4 +1,188 @@
 {
+  "featured": [
+    {
+      "id": "bscic-cox-bazar",
+      "name": "BSCIC District Office, Cox's Bazar",
+      "location": "Cox's Bazar, Bangladesh",
+      "client": "Bangladesh Small & Cottage Industries Corporation",
+      "category": "Institutional",
+      "status": "Completed",
+      "year": "2024",
+      "image": "renderView of bscic building cox bazar.jpeg",
+      "summary": "A five-storied institutional office complex designed with an exposed-concrete façade, deep vertical louvres and a sheltered entry plaza tuned for the coastal climate of Cox's Bazar.",
+      "scope": [
+        "Architectural design & 3D visualisation",
+        "RCC structural analysis and design",
+        "Geotechnical investigation",
+        "MEP coordination",
+        "Construction supervision"
+      ],
+      "facts": [
+        { "label": "Storeys", "value": "G+4" },
+        { "label": "Structure", "value": "RCC Frame" },
+        { "label": "Built Area", "value": "38,000 sft" },
+        { "label": "Duration", "value": "18 Months" }
+      ],
+      "description": "The Cox's Bazar district office consolidates BSCIC's administrative and public-facing functions into a single, climate-responsive block. A vertical shading screen wraps the west elevation to cut solar gain, while the recessed entry court provides shaded circulation and covered parking. The structural system uses a moment-resisting RCC frame designed to BNBC 2020 seismic provisions, with foundations sized from site-specific SPT data."
+    },
+    {
+      "id": "bscic-bogra",
+      "name": "BSCIC District Office, Bogura",
+      "location": "Bogura, Bangladesh",
+      "client": "Bangladesh Small & Cottage Industries Corporation",
+      "category": "Institutional",
+      "status": "Completed",
+      "year": "2024",
+      "image": "bscic office bugora.jpeg",
+      "summary": "A completed four-storied district office featuring exposed brick infill panels, full-height glazed bays and horizontal aluminium louvre screens for passive solar control.",
+      "scope": [
+        "Architectural planning",
+        "Structural design & detailing",
+        "Fire safety layout",
+        "Site supervision"
+      ],
+      "facts": [
+        { "label": "Storeys", "value": "G+3" },
+        { "label": "Structure", "value": "RCC Frame" },
+        { "label": "Built Area", "value": "26,500 sft" },
+        { "label": "Duration", "value": "14 Months" }
+      ],
+      "description": "Delivered for BSCIC Bogura, this office building balances a clean white frame with warm brick infill and dark louvre screens. The ground floor houses public counters and a display hall, while upper floors accommodate administrative offices and a conference suite. PDC provided the full engineering package from concept through construction supervision."
+    },
+    {
+      "id": "bscic-cumilla",
+      "name": "BSCIC District Office, Cumilla",
+      "location": "Cumilla, Bangladesh",
+      "client": "Bangladesh Small & Cottage Industries Corporation",
+      "category": "Institutional",
+      "status": "Ongoing",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400&q=80",
+      "summary": "District administrative office with flexible open-plan floor plates and a naturally ventilated central atrium.",
+      "scope": ["Architectural design", "Structural design", "MEP design"],
+      "facts": [
+        { "label": "Storeys", "value": "G+4" },
+        { "label": "Structure", "value": "RCC Frame" },
+        { "label": "Built Area", "value": "31,000 sft" },
+        { "label": "Duration", "value": "16 Months" }
+      ],
+      "description": "Placeholder project narrative. Detailed project information, drawings and photographs will be published once the project reaches handover."
+    },
+    {
+      "id": "bscic-sylhet",
+      "name": "BSCIC District Office, Sylhet",
+      "location": "Sylhet, Bangladesh",
+      "client": "Bangladesh Small & Cottage Industries Corporation",
+      "category": "Institutional",
+      "status": "Ongoing",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&q=80",
+      "summary": "Regional office designed for high rainfall loading with deep overhangs and a raised service plinth.",
+      "scope": ["Architectural design", "Structural design", "Geotechnical investigation"],
+      "facts": [
+        { "label": "Storeys", "value": "G+4" },
+        { "label": "Structure", "value": "RCC Frame" },
+        { "label": "Built Area", "value": "29,400 sft" },
+        { "label": "Duration", "value": "15 Months" }
+      ],
+      "description": "Placeholder project narrative. Detailed project information, drawings and photographs will be published once the project reaches handover."
+    },
+    {
+      "id": "valensia-tower",
+      "name": "Valensia Tower",
+      "location": "Tipu Sultan Road, Wari, Dhaka",
+      "client": "Art Effects Ltd",
+      "category": "Residential",
+      "status": "Completed",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1400&q=80",
+      "summary": "Fifteen-storied residential tower on a constrained inner-city plot in old Dhaka.",
+      "scope": ["Structural analysis & design", "Foundation design", "Construction supervision"],
+      "facts": [
+        { "label": "Storeys", "value": "15" },
+        { "label": "Structure", "value": "RCC Shear Wall" },
+        { "label": "Built Area", "value": "84,000 sft" },
+        { "label": "Duration", "value": "30 Months" }
+      ],
+      "description": "Placeholder project narrative. Detailed project information, drawings and photographs will be added shortly."
+    },
+    {
+      "id": "samira-tower",
+      "name": "Samira Tower",
+      "location": "Road-07, Jatrabari, Dhaka",
+      "client": "Art Effects Ltd",
+      "category": "Commercial",
+      "status": "Completed",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400&q=80",
+      "summary": "Mixed-use residential and commercial RCC tower with double-height retail frontage.",
+      "scope": ["Structural design", "Architectural coordination", "Special inspections"],
+      "facts": [
+        { "label": "Storeys", "value": "12" },
+        { "label": "Structure", "value": "RCC Frame" },
+        { "label": "Built Area", "value": "61,000 sft" },
+        { "label": "Duration", "value": "26 Months" }
+      ],
+      "description": "Placeholder project narrative. Detailed project information, drawings and photographs will be added shortly."
+    },
+    {
+      "id": "unifill-shed",
+      "name": "Unifill Washing & Dyeing Shed",
+      "location": "Rupganj, Narayanganj",
+      "client": "Unifill Washing & Dyeing Ltd.",
+      "category": "Industrial",
+      "status": "Completed",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&q=80",
+      "summary": "Long-span pre-engineered steel production shed with integrated effluent treatment provisions.",
+      "scope": ["Steel structure design", "Foundation design", "ETP structural works"],
+      "facts": [
+        { "label": "Span", "value": "30 m Clear" },
+        { "label": "Structure", "value": "PEB Steel" },
+        { "label": "Built Area", "value": "52,000 sft" },
+        { "label": "Duration", "value": "10 Months" }
+      ],
+      "description": "Placeholder project narrative. Detailed project information, drawings and photographs will be added shortly."
+    },
+    {
+      "id": "jalalabad-spinning",
+      "name": "Jalalabad Spinning Mill",
+      "location": "Moulvibazar, Sylhet",
+      "client": "Jalalabad Spinning Ltd.",
+      "category": "Industrial",
+      "status": "Completed",
+      "year": "2022",
+      "image": "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1400&q=80",
+      "summary": "Single-storey spinning mill with heavy machinery foundations and vibration control detailing.",
+      "scope": ["Structural design", "Machine foundation design", "Geotechnical investigation"],
+      "facts": [
+        { "label": "Span", "value": "24 m Clear" },
+        { "label": "Structure", "value": "Steel Truss" },
+        { "label": "Built Area", "value": "47,500 sft" },
+        { "label": "Duration", "value": "12 Months" }
+      ],
+      "description": "Placeholder project narrative. Detailed project information, drawings and photographs will be added shortly."
+    },
+    {
+      "id": "jalil-villa",
+      "name": "Jalil Villa, Shajahanpur",
+      "location": "Shajahanpur, Dhaka",
+      "client": "Heritage Assets",
+      "category": "Residential",
+      "status": "Under Construction",
+      "year": "2026",
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=80",
+      "summary": "Boutique residential development currently under construction in central Dhaka.",
+      "scope": ["Structural design", "Architectural design", "Project management"],
+      "facts": [
+        { "label": "Storeys", "value": "G+8" },
+        { "label": "Structure", "value": "RCC Frame" },
+        { "label": "Built Area", "value": "44,000 sft" },
+        { "label": "Duration", "value": "24 Months" }
+      ],
+      "description": "Placeholder project narrative. Detailed project information, drawings and photographs will be added shortly."
+    }
+  ],
   "accomplished": [
     { "sl": 1, "name": "15 (Eleven) Storied Residential Building (Valensia Tower)", "location": "Plot-28/A, Tipu-Sultan Road, Wari, Dhaka-1100", "client": "Art Effects Ltd" },
     { "sl": 2, "name": "Samira Tower (Residential cum Commercial RCC Building)", "location": "64/B, Road-07, Jatrabari", "client": "Art Effects Ltd" },
